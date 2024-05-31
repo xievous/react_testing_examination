@@ -2,6 +2,10 @@ import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import { it } from "vitest";
 import React, { useState } from "react";
 import Shoes from "./Shoes";
+import fetchMock from "jest-fetch-mock";
+
+// Configure fetch mock
+fetchMock.enableMocks();
 
 it("should be able to choose shoe size and remove shoes", async () => {
   // Jag gjorde på detta sätt för det sparades inte i arrayen, jag testade testa booking istället men kunde inte lösa det på de sättet så gjorde såhär
