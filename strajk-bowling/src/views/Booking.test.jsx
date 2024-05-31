@@ -12,7 +12,6 @@ afterEach(() => server.resetHandlers());
 afterAll(() => server.close());
 
 it("should return mock booking details on successful API call", async () => {
-  /*
   const response = await fetch(
     "https://h5jbtjv6if.execute-api.eu-north-1.amazonaws.com",
     {
@@ -27,9 +26,6 @@ it("should return mock booking details on successful API call", async () => {
   const data = await response.json();
 
   expect(response.status).toBe(201);
-*/
-
-  const response = "hej";
 
   expect(data).toEqual({
     when: "2024-05-31T11:30",
